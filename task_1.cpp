@@ -12,6 +12,6 @@ int main()               //main function program starts its execution from here
         cout<<n[i];       // Print characters in reverse
     }
     cout<<endl;          //printing newline
-    return 0;            //return nothing successful execution
+    return 0;            //return nothing successful execution 
 }
 

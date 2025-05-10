@@ -9,12 +9,19 @@ int main()               //main function program starts its execution from here
 
     for(int i=0;i<=n.size();i++)   //for loop to check each character of the string
     {
-        if( i==0 || n[i-1]==' ')   //check it's either the first character or the character after a space
+        // if( i==0 || n[i-1]==' ')   //check it's either the first character or the character after a space
+        // {
+        // if(n[i]>='a' && n[i]<='z') // If it's a lowercase letter, convert it to uppercase
+        // {
+        //   n[i]=n[i]-32;     // Convert lowercase to uppercase
+        // }
+        // }
+        if(i==0||n[i-1]==' ')
         {
-        if(n[i]>='a' && n[i]<='z') // If it's a lowercase letter, convert it to uppercase
-        {
-          n[i]=n[i]-32;     // Convert lowercase to uppercase
-        }
+          if(n[i]>='a' || n[i]<='z')
+          {
+            n[i]=n[i]-32;
+          }
         }
     }
     cout<<n;               // printing the modified string with capitalized words
